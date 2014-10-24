@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+    titleToken: "Project",
     model: function(params) {
         return this.store.find('project', {slug: params.slug}).then(function(results) {
             return results.objectAt(0);

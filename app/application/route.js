@@ -1,5 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    title: "Gaurav Munjal - Embreñero"
+    titleToken: "Gaurav Munjal - Embereño",
+    title: function(tokens) {
+       return tokens.join(" - ");
+    }
 });
