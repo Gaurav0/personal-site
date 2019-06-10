@@ -1,5 +1,4 @@
 export default function() {
-  this.loadFixtures();
 
   this.get('/projects', 'project');
 

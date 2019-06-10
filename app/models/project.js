@@ -1,13 +1,13 @@
 import DS from 'ember-data';
-const { Model, attr } = DS;
+const { Model } = DS;
 
-export default class ProjectModel extends Model {
-  slug = attr('string')
-  title = attr('string')
-  thumb = attr('string')
-  image = attr('string')
-  desc = attr('string')
-  url = attr('string')
-  urltext = attr('string')
-  src = attr('string')
-}
+export default Model.extend({
+  slug: DS.attr('string'),
+  title: DS.attr('string'),
+  thumb: DS.attr('string'),
+  image: DS.attr('string'),
+  desc: DS.attr('string'),
+  url: DS.attr('string'),
+  urltext: DS.attr('string'),
+  src: DS.attr('string')
+});
