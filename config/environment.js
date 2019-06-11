@@ -24,7 +24,7 @@ module.exports = function(environment) {
     },
 
     fastboot: {
-      hostWhitelist: ['localhost:4200', 'gaurav0.github.io']
+      hostWhitelist: [/localhost\:\d+/, 'gaurav0.github.io']
     }
   };
 
