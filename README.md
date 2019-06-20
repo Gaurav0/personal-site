@@ -22,8 +22,8 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+* Visit your app at [https://gaurav0.github.io](https://gaurav0.github.io).
+* Visit your tests at [https://gaurav0.github.io/tests](https://gaurav0.github.io/tests).
 
 ### Code Generators
 
