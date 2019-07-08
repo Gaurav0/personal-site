@@ -1,8 +1,10 @@
 import Route from '@ember/routing/route';
 import { schedule } from '@ember/runloop';
+import { inject as service } from '@ember/service';
 
 export default class ProjectsProjectRoute extends Route {
-  titleToken = "Project"
+  @service fastboot;
+  titleToken = "Project";
 
   model(params) {
     return this.store.query('project', {slug: params.slug}).then(function(results) {
@@ -15,16 +17,20 @@ export default class ProjectsProjectRoute extends Route {
   }
 
   activate() {
-    schedule('afterRender', function() {
-      document.querySelectorAll('[href="#/projects"]').forEach(function(element) {
-        element.classList.add("active");
+    if (!this.fastboot.isFastBoot) {
+      schedule('afterRender', () => {
+        document.querySelectorAll('[href="#/projects"]').forEach(function(element) {
+          element.classList.add("active");
+        });
       });
-    });
+    }
   }
 
   deactivate() {
-    document.querySelectorAll('[href="#/projects"]').forEach(function(element) {
-      element.classList.remove("active");
-    });
+    if (!this.fastboot.isFastBoot) {
+      document.querySelectorAll('[href="#/projects"]').forEach(function(element) {
+        element.classList.remove("active");
+      });
+    }
   }
 }
