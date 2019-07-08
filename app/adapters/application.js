@@ -10,6 +10,6 @@ export default DS.JSONAPIAdapter.extend(CachedShoe, AdapterFetch, {
   namespace: 'api',
   shouldBackgroundReloadRecord() { return false; },
   shouldBackgroundReloadAll() { return false; },
-  shouldReloadRecord() { return true; },
-  shouldReloadAll() { return true; }
+  shouldReloadRecord() { return this.fastboot.isFastBoot; },
+  shouldReloadAll() { return this.fastboot.isFastBoot; }
 });

@@ -4,6 +4,6 @@ export default class ProjectsRoute extends Route {
   titleToken = "Projects"
 
   model() {
-    return this.store.findAll('project');
+    return this.store.loadAll('project');
   }
 }
