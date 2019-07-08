@@ -1,9 +1,13 @@
 import Route from '@ember/routing/route';
 
 export default class ProjectsRoute extends Route {
-  titleToken = "Projects"
+  @service fastboot;
+  titleToken = "Projects";
 
   model() {
-    return this.store.loadAll('project');
+    if (this.fastboot.isFastBoot) {
+      return this.store.findAll('project');
+    }
+    return this.store.peekAll('project');
   }
 }
