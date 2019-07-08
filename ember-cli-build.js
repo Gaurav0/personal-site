@@ -6,6 +6,9 @@ const crawl = require('prember-crawler');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    fingerprint: {
+      exclude: ['images/*']
+    },
     prember: {
       urls: crawl
     }

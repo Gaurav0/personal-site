@@ -24,7 +24,7 @@
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
     "ember-cached-shoe": "^0.2.1",
-    "ember-cli": "github:ember-cli/ember-cli#0c5ba73e277cfb0debae048c3cf2dc067bc932f3",
+    "ember-cli": "ember-cli/ember-cli#master",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.7.0",
     "ember-cli-dependency-checker": "^3.0.0",
@@ -44,7 +44,7 @@
     "ember-page-title": "^5.0.1",
     "ember-qunit": "^4.1.2",
     "ember-resolver": "^5.1.3",
-    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0de75b8f751ae13b14b08f0ee6dd7958737fff34.tgz",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/b31998b6a0cccd22a8fb6fab21d24e5e7f2cb70d.tgz",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^6.0.1",
     "eslint-plugin-node": "^8.0.1",
@@ -53,12 +53,10 @@
     "loader.js": "^4.7.0",
     "morgan": "^1.3.2",
     "prember": "^1.0.3",
+    "prember-crawler": "^1.0.0",
     "qunit-dom": "^0.8.0"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
-  },
-  "dependencies": {
-    "prember-crawler": "^1.0.0"
   }
 }

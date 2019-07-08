@@ -1384,6 +1384,10 @@ ansi-escapes@^3.0.0, ansi-escapes@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
 
+ansi-html@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -2822,14 +2826,16 @@ broccoli-webpack@^1.0.0:
     webpack "^1.12.14"
 
 broccoli@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/broccoli/-/broccoli-3.0.1.tgz#cc195edec5dfcc5f72fdfa4dae0e66696827ccc3"
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/broccoli/-/broccoli-3.1.2.tgz#31a8758aa087a26d62f1dab65c1d0af87cbced73"
   dependencies:
+    ansi-html "^0.0.7"
     broccoli-node-info "^2.0.0"
     broccoli-slow-trees "^3.0.1"
     broccoli-source "^1.1.0"
     commander "^2.15.1"
     connect "^3.6.6"
+    console-ui "^3.0.4"
     esm "^3.2.4"
     findup-sync "^2.0.0"
     handlebars "^4.0.11"
@@ -3451,9 +3457,9 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
 
-console-ui@^3.0.2:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/console-ui/-/console-ui-3.0.4.tgz#1df0b003ea7b6adcda3d2f781f567b3b75ee7cbb"
+console-ui@^3.0.2, console-ui@^3.0.4:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/console-ui/-/console-ui-3.1.1.tgz#681a0414e8b0a23ed679d0a2802e39d920801171"
   dependencies:
     chalk "^2.1.0"
     inquirer "^6"
@@ -4293,9 +4299,9 @@ ember-cli-version-checker@^3.0.0, ember-cli-version-checker@^3.0.1, ember-cli-ve
     resolve-package-path "^1.2.6"
     semver "^5.6.0"
 
-"ember-cli@github:ember-cli/ember-cli#0c5ba73e277cfb0debae048c3cf2dc067bc932f3":
+ember-cli@ember-cli/ember-cli#master:
   version "3.11.0-beta.3"
-  resolved "https://codeload.github.com/ember-cli/ember-cli/tar.gz/0c5ba73e277cfb0debae048c3cf2dc067bc932f3"
+  resolved "https://codeload.github.com/ember-cli/ember-cli/tar.gz/6157c9eb6d831db2690ff56bc7291b37f990592e"
   dependencies:
     "@babel/core" "^7.4.5"
     "@babel/plugin-transform-modules-amd" "^7.2.0"
@@ -4512,9 +4518,9 @@ ember-source-channel-url@^2.0.1:
   dependencies:
     got "^8.0.1"
 
-"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0de75b8f751ae13b14b08f0ee6dd7958737fff34.tgz":
-  version "3.12.0-canary"
-  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/0de75b8f751ae13b14b08f0ee6dd7958737fff34.tgz#33fce05e5222a04a0710104fc361caf0bd546d6c"
+"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/b31998b6a0cccd22a8fb6fab21d24e5e7f2cb70d.tgz":
+  version "3.13.0-canary"
+  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/b31998b6a0cccd22a8fb6fab21d24e5e7f2cb70d.tgz#6ac334db4386503de024c8bd965c8a7f10c802ee"
   dependencies:
     broccoli-funnel "^2.0.2"
     broccoli-merge-trees "^3.0.2"
@@ -4529,7 +4535,7 @@ ember-source-channel-url@^2.0.1:
     ember-router-generator "^1.2.3"
     inflection "^1.12.0"
     jquery "^3.4.1"
-    resolve "^1.10.1"
+    resolve "^1.11.1"
 
 ember-template-lint@^1.1.0:
   version "1.1.0"
@@ -8487,7 +8493,7 @@ resolve@1.9.0:
   dependencies:
     path-parse "^1.0.6"
 
-resolve@^1.1.3, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.3.2, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.7.1, resolve@^1.8.1:
+resolve@^1.1.3, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.11.0, resolve@^1.11.1, resolve@^1.3.2, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.7.1, resolve@^1.8.1:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.11.1.tgz#ea10d8110376982fef578df8fc30b9ac30a07a3e"
   dependencies:
@@ -8664,9 +8670,13 @@ semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0, semve
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
 
-semver@^6.0.0, semver@^6.1.0, semver@^6.1.1:
+semver@^6.0.0, semver@^6.1.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.1.1.tgz#53f53da9b30b2103cd4f15eab3a18ecbcb210c9b"
+
+semver@^6.1.1:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.2.0.tgz#4d813d9590aaf8a9192693d6c85b9344de5901db"
 
 send@0.17.1:
   version "0.17.1"
