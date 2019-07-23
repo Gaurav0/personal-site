@@ -1,0 +1,7 @@
+<h1>Projects</h1>
+<ul class="tiles">
+  {{#each this.model as |project|}}
+    <li>{{#link-to "projects.project" project}}<img src={{project.thumb}} alt=""><br>{{project.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+{{outlet}}

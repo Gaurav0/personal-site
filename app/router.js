@@ -1,14 +1,16 @@
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
 
-var Router = Ember.Router.extend({
-  location: config.locationType
+const Router = EmberRouter.extend({
+  location: config.locationType,
+  rootURL: config.rootURL
 });
 
 Router.map(function() {
-    this.route('projects');
-    this.resource('project', { path: 'projects/:slug' });
-    this.route('resume');
+  this.route('projects', function() {
+    this.route('project', { path: '/:slug' });
+  });
+  this.route('resume');
 });
 
 export default Router;
