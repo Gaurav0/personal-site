@@ -48,15 +48,16 @@ nav ul li {
 
 ul.tiles {
   list-style-type: none;
-  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 0;
-  display: table;
-  width: 100%;
 }
 
 ul.tiles li {
-  display: table-cell;
   text-align: center;
+  margin: 30px;
 }
 
 ul.tiles img {

@@ -38,6 +38,17 @@ module.exports = function(app) {
           url: "http://infinitegraffitiwall.appspot.com",
           urltext: "Try It Now",
           src: "https://bitbucket.org/Gaurav0/infinitegraffitiwall"
+      },
+      {
+        id: 4,
+        slug: "universal-lpc-spritesheet-character-generator",
+        title: "Universal LPC Spritesheet Character Generator",
+        thumb: "/images/chargen_thumb.png",
+        image: "/images/chargen.png",
+        desc: "Customize a pixel art character for your game with open source art assets from the Liberated Pixel Cup on opengameart.com",
+        url: "http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator",
+        urltext: "Try It Now",
+        src: "https://github.com/Gaurav0/Universal-LPC-Spritesheet-Character-Generator"
       }
     ]);
   });

@@ -7,9 +7,9 @@ export default class ProjectsProjectRoute extends Route {
   titleToken = "Project";
 
   model(params) {
-    return this.store.query('project', {slug: params.slug}).then(function(results) {
-      return results.objectAt(0);
-    });
+    return this.modelFor('application').toArray().find(project =>
+      project.slug === params.slug
+    );
   }
 
   serialize(model) {
