@@ -49,6 +49,17 @@ module.exports = function(app) {
         url: "http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator",
         urltext: "Try It Now",
         src: "https://github.com/Gaurav0/Universal-LPC-Spritesheet-Character-Generator"
+      },
+      {
+        id: 5,
+        slug: "ember-twiddle",
+        title: "Ember Twiddle",
+        thumb: "/images/twiddle_thumb.png",
+        image: "/images/twiddle.png",
+        desc: "Developer playground for Ember applications; a place where you can code an Ember app, see it run on the fly, and share a link to it with others.",
+        url: "https://ember-twiddle.com",
+        urltext: "Try It Now",
+        src: "https:github.com/ember-cli/ember-twiddle"
       }
     ]);
   });
